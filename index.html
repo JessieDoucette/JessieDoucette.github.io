@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jessie Doucette — Mechanical Engineering Portfolio</title>
+  <meta name="description" content="Mechanical engineering portfolio of Jessie Doucette — projects in automotive fabrication, mechatronics, and machine design.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#top" class="nav-brand">JD<span class="nav-brand-dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="top">
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Mechanical Engineering Portfolio</p>
+      <h1 class="hero-title">Jessie<br>Doucette</h1>
+      <p class="hero-tagline">Mechanical Engineering Student at Dalhousie University</p>
+      <p class="hero-sub">Building things that move. Cars, jets, mechanisms — anywhere mechanical systems meet the road, the runway, or the workshop floor.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="section section-about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-photo-wrap">
+          <div class="about-photo">
+            <img src="images/profile.jpg" alt="Jessie Doucette" onerror="this.style.display='none';this.parentElement.classList.add('placeholder');this.parentElement.innerHTML='<span>Add profile.jpg<br>to /images</span>';">
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="section-eyebrow">About</p>
+          <h2 class="section-title">Engineer in the making.</h2>
+          <p>I'm a fourth-year Mechanical Engineering student at Dalhousie University with a deep interest in automotive and aerospace systems — anything with an engine, a wing, or a clever mechanism gets my attention.</p>
+          <p>My projects span hands-on fabrication (a from-scratch LS swap into a 1987 RX-7), mechatronic system integration (a MATLAB-based video game driven by an Arduino controller), and classical machine design (a competition-grade linkage vehicle for MECH-3500).</p>
+          <p>I'm currently looking for roles in the <strong>automotive and aerospace industries</strong> where I can bring this mix of fabrication, analysis, and systems thinking to real-world engineering problems.</p>
+          <ul class="about-tags">
+            <li>Mechanical Design</li>
+            <li>Fabrication</li>
+            <li>ECU Tuning</li>
+            <li>MATLAB</li>
+            <li>SolidWorks</li>
+            <li>Arduino / Embedded</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-projects" id="projects">
+    <div class="container">
+      <p class="section-eyebrow centered">Selected Work</p>
+      <h2 class="section-title centered">Projects</h2>
+
+      <!-- PROJECT 1: RX-7 -->
+      <article class="project project-feature">
+        <div class="project-image">
+          <img src="images/rx7-1.jpg" alt="1987 Mazda RX-7 LS Swap" onerror="this.style.display='none';this.parentElement.classList.add('placeholder');this.parentElement.innerHTML='<span>RX-7 photo<br>images/rx7-1.jpg</span>';">
+          <div class="project-image-tag">01</div>
+        </div>
+        <div class="project-body">
+          <p class="project-meta">Solo Build · 7 Months · Personal Project</p>
+          <h3 class="project-title">1987 Mazda RX-7 LS Swap</h3>
+          <p class="project-summary">End-to-end solo build converting an original 13B rotary RX-7 to a 6.0L GM LQ9 V8 paired with an AR5 5-speed manual. Required custom-fabricated mounts, full ECU re-tuning, and dyno validation.</p>
+
+          <div class="project-stats">
+            <div class="stat">
+              <span class="stat-value">400</span>
+              <span class="stat-label">WHP on Dyno</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">~$15K</span>
+              <span class="stat-label">Cost Savings</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">7 mo</span>
+              <span class="stat-label">Solo Build</span>
+            </div>
+          </div>
+
+          <h4 class="project-section-heading">Technical Highlights</h4>
+          <ul class="project-list">
+            <li><strong>Custom mount fabrication.</strong> Engine and transmission mounts designed and fabricated from scratch — no off-the-shelf adapter kit — to position the LQ9 optimally within the RX-7 chassis.</li>
+            <li><strong>ECU re-calibration in TunerPro.</strong> Re-mapped the factory truck calibration for a 1,200 kg sports-car application, refining fuel and ignition tables iteratively through road and dyno testing.</li>
+            <li><strong>Full systems integration.</strong> Adapted cooling, fuel, exhaust, electrical, and driveline subsystems into a chassis never engineered for the powertrain.</li>
+            <li><strong>Cost engineering.</strong> Sourced junkyard cores and self-performed all labour to deliver an estimated $15,000 in savings vs. shop-built quotes.</li>
+          </ul>
+
+          <div class="project-tags">
+            <span class="tag">Fabrication</span>
+            <span class="tag">ECU Tuning</span>
+            <span class="tag">TunerPro</span>
+            <span class="tag">Systems Integration</span>
+            <span class="tag">Dyno Testing</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 2: Penguingineer -->
+      <article class="project project-feature project-reverse">
+        <div class="project-image">
+          <img src="images/penguingineer-1.jpg" alt="Penguingineer Adventures" onerror="this.style.display='none';this.parentElement.classList.add('placeholder');this.parentElement.innerHTML='<span>Penguingineer photo<br>images/penguingineer-1.jpg</span>';">
+          <div class="project-image-tag">02</div>
+        </div>
+        <div class="project-body">
+          <p class="project-meta">Mechatronic Project · MATLAB &amp; Arduino</p>
+          <h3 class="project-title">Penguingineer Adventures</h3>
+          <p class="project-summary">An original 2D video game built from the ground up in MATLAB, combining a custom real-time physics engine with an Arduino-based hardware controller. Every subsystem — solver, rendering, serial protocol — was implemented from scratch.</p>
+
+          <h4 class="project-section-heading">Technical Highlights</h4>
+          <ul class="project-list">
+            <li><strong>RK4 physics solver.</strong> Implemented a fourth-order Runge–Kutta integrator to numerically solve the ODEs governing in-game motion, chosen over simpler schemes for its stability at interactive frame rates.</li>
+            <li><strong>Arduino handshake protocol.</strong> Built a custom serial communication scheme between MATLAB and an Arduino microcontroller, ensuring synchronized, low-latency input from the physical controller.</li>
+            <li><strong>Custom controller hardware.</strong> Designed and wired the input circuit from schematic to breadboard, mapping physical buttons to Arduino digital pins.</li>
+            <li><strong>Modular code architecture.</strong> Cleanly separated physics, input, rendering, and game-state logic for testability and extensibility.</li>
+          </ul>
+
+          <div class="project-tags">
+            <span class="tag">MATLAB</span>
+            <span class="tag">Arduino</span>
+            <span class="tag">Numerical Methods</span>
+            <span class="tag">Embedded</span>
+            <span class="tag">Mechatronics</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 3: MECH-3500 -->
+      <article class="project project-feature">
+        <div class="project-image">
+          <img src="images/mech3500-1.jpg" alt="MECH-3500 Linkage Vehicle" onerror="this.style.display='none';this.parentElement.classList.add('placeholder');this.parentElement.innerHTML='<span>MECH-3500 photo<br>images/mech3500-1.jpg</span>';">
+          <div class="project-image-tag">03</div>
+        </div>
+        <div class="project-body">
+          <p class="project-meta">MECH-3500 · Group Design Project · Dalhousie</p>
+          <h3 class="project-title">Linkage-Driven Competition Vehicle</h3>
+          <p class="project-summary">A LEGO-based competition vehicle propelled entirely by linkages — no driven wheels permitted — engineered to perform across both a 3 m speed trial and a five-stage obstacle course.</p>
+
+          <div class="project-stats">
+            <div class="stat">
+              <span class="stat-value">6.16s</span>
+              <span class="stat-label">Speed Trial</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">3</span>
+              <span class="stat-label">Gear Ratios</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">52°+</span>
+              <span class="stat-label">Min. Trans. Angle</span>
+            </div>
+          </div>
+
+          <h4 class="project-section-heading">Technical Highlights</h4>
+          <ul class="project-list">
+            <li><strong>Four-bar linkage drive.</strong> Synthesized and analyzed in Linkage software; verified Grashof condition and minimum transmission angles of 52° (front) and 57° (rear) against a 45° design threshold.</li>
+            <li><strong>Three-speed variable transmission.</strong> 0.36:1 / 1:1 / 2.78:1 gear ratios let the same vehicle compete in both a high-speed trial and a high-torque obstacle course.</li>
+            <li><strong>Iterative design.</strong> First iteration ("the Centipede") used crank-sliders that failed to produce upward force; the four-bar coupler-path design replaced it after kinematic analysis.</li>
+            <li><strong>Post-test failure analysis.</strong> Identified rounded-brake geometry, ratchet-and-pawl drive, and increased structural rigidity as concrete next-iteration improvements.</li>
+          </ul>
+
+          <div class="project-tags">
+            <span class="tag">Machine Design</span>
+            <span class="tag">Kinematics</span>
+            <span class="tag">Linkage Software</span>
+            <span class="tag">Drivetrain</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-contact" id="contact">
+    <div class="container">
+      <p class="section-eyebrow centered">Get in Touch</p>
+      <h2 class="section-title centered">Let's build something.</h2>
+      <p class="contact-blurb">Currently looking for opportunities in the automotive and aerospace industries. If you're hiring, collaborating, or just want to talk shop — reach out.</p>
+
+      <div class="contact-cards">
+        <a href="mailto:js273830@dal.ca" class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </div>
+          <div class="contact-card-label">Email</div>
+          <div class="contact-card-value">js273830@dal.ca</div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/jessiedoucette/" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </div>
+          <div class="contact-card-label">LinkedIn</div>
+          <div class="contact-card-value">/in/jessiedoucette</div>
+        </a>
+
+        <a href="https://github.com/JessieDoucette" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </div>
+          <div class="contact-card-label">GitHub</div>
+          <div class="contact-card-value">@JessieDoucette</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Jessie Doucette · Built with HTML, CSS, and a healthy obsession with mechanical things.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Smooth scroll for nav
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Reveal-on-scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.project, .about-grid, .contact-cards').forEach(el => io.observe(el));
+  </script>
+
+</body>
+</html>
